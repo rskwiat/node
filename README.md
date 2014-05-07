@@ -1,5 +1,3 @@
-node-beginner
+node
 =============
-
-Node Beginner Lessons
-http://www.nodebeginner.org/
+Demos and Exercises from Builiding Websites with Node and Express
