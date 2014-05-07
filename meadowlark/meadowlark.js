@@ -1,5 +1,6 @@
 var express = require('express');
 var http = require('http');
+var fortune = require('./lib/fortune.js');
 
 var app = express();
 var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
@@ -17,8 +18,7 @@ var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
     });
 
     app.get('/about', function(req, res){
-        var randomFortune = fortuneCookies[Math.floor(Math.random() * fortuneCookies.length)];
-        res.render('about', { fortune: randomFortune });
+        res.render('about', { fortune: fortune.getFortune() });
     });
 
     app.use(function(req, res, next){
@@ -26,16 +26,6 @@ var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
         res.render('404');
     });
 
-var fortuneCookies = [
-    'conquer your fears or they will conquer you.',
-    'rivers need springs.',
-    'do not fear what you don\'t know.',
-    'you will have a pleasant surprise.',
-    'keep it simple stupid.',
-    'stick with your wife.',
-    'you will find happiness with a new love',
-    'I hope people get the Simpons reference'
-];
 
 
 http.createServer(app).listen(app.get('port'), function(){
