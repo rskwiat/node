@@ -1,0 +1,570 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'link-checker',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.7
+3 info using node@v0.10.26
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json @ No description
+6 warn package.json @ No repository field.
+7 warn package.json @ No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'link-checker', null ]
+10 verbose cache add name=undefined spec="link-checker" args=["link-checker",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'link-checker',
+11 verbose parsed url   path: 'link-checker',
+11 verbose parsed url   href: 'link-checker' }
+12 silly lockFile 0e52dd52-link-checker link-checker
+13 verbose lock link-checker /Users/rskwiat/.npm/0e52dd52-link-checker.lock
+14 silly lockFile 0e52dd52-link-checker link-checker
+15 silly lockFile 0e52dd52-link-checker link-checker
+16 verbose addNamed [ 'link-checker', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 523569f6-link-checker link-checker@
+19 verbose lock link-checker@ /Users/rskwiat/.npm/523569f6-link-checker.lock
+20 silly addNameRange { name: 'link-checker', range: '*', hasData: false }
+21 verbose url raw link-checker
+22 verbose url resolving [ 'https://registry.npmjs.org/', './link-checker' ]
+23 verbose url resolved https://registry.npmjs.org/link-checker
+24 info trying registry request attempt 1 at 17:32:27
+25 http GET https://registry.npmjs.org/link-checker
+26 http 200 https://registry.npmjs.org/link-checker
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Tue, 13 May 2014 21:32:30 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+27 silly registry.get     etag: '"AU1QHYN407XMOV6BBTMFQLIUC"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=1',
+27 silly registry.get     'content-length': '2658',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '46',
+27 silly registry.get     'x-served-by': 'cache-v41-ASH',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1400016750.665796757,VS0,VE85',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'link-checker', range: '*', hasData: true }
+29 silly addNameRange versions [ 'link-checker', [ '0.0.1', '0.0.2' ] ]
+30 verbose addNamed [ 'link-checker', '0.0.2' ]
+31 verbose addNamed [ '0.0.2', '0.0.2' ]
+32 silly lockFile 2fa6af94-link-checker-0-0-2 link-checker@0.0.2
+33 verbose lock link-checker@0.0.2 /Users/rskwiat/.npm/2fa6af94-link-checker-0-0-2.lock
+34 silly lockFile 747a5be1-k-checker-link-checker-0-0-2-tgz https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz
+35 verbose lock https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz /Users/rskwiat/.npm/747a5be1-k-checker-link-checker-0-0-2-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz',
+36 verbose addRemoteTarball   '029dd76c41ea70eb8c17f2d892f4f726e343e12a' ]
+37 info retry fetch attempt 1 at 17:32:28
+38 verbose fetch to= /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz
+39 http GET https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz
+40 http 200 https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz
+41 verbose tar unpack /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz
+42 silly lockFile 2fd3be84-t-npm-link-checker-0-0-2-package tar:///Users/rskwiat/.npm/link-checker/0.0.2/package
+43 verbose lock tar:///Users/rskwiat/.npm/link-checker/0.0.2/package /Users/rskwiat/.npm/2fd3be84-t-npm-link-checker-0-0-2-package.lock
+44 silly lockFile 72b88286-48236-0-7241447693668306-tmp-tgz tar:///var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz
+45 verbose lock tar:///var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz /Users/rskwiat/.npm/72b88286-48236-0-7241447693668306-tmp-tgz.lock
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry .gitignore
+48 silly gunzTarPerm extractEntry bin/
+49 silly gunzTarPerm extractEntry bin/link-checker
+50 silly gunzTarPerm extractEntry Cakefile
+51 silly gunzTarPerm extractEntry lib/
+52 silly gunzTarPerm extractEntry lib/link-checker.js
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry src/
+56 silly gunzTarPerm extractEntry src/link-checker.coffee
+57 silly lockFile 2fd3be84-t-npm-link-checker-0-0-2-package tar:///Users/rskwiat/.npm/link-checker/0.0.2/package
+58 silly lockFile 2fd3be84-t-npm-link-checker-0-0-2-package tar:///Users/rskwiat/.npm/link-checker/0.0.2/package
+59 silly lockFile 72b88286-48236-0-7241447693668306-tmp-tgz tar:///var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz
+60 silly lockFile 72b88286-48236-0-7241447693668306-tmp-tgz tar:///var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748236-0.7241447693668306/tmp.tgz
+61 silly lockFile 747a5be1-k-checker-link-checker-0-0-2-tgz https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz
+62 silly lockFile 747a5be1-k-checker-link-checker-0-0-2-tgz https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz
+63 silly lockFile 2fa6af94-link-checker-0-0-2 link-checker@0.0.2
+64 silly lockFile 2fa6af94-link-checker-0-0-2 link-checker@0.0.2
+65 silly lockFile 523569f6-link-checker link-checker@
+66 silly lockFile 523569f6-link-checker link-checker@
+67 silly resolved [ { name: 'link-checker',
+67 silly resolved     preferGlobal: 'true',
+67 silly resolved     version: '0.0.2',
+67 silly resolved     author: { name: 'Pieter Michels', email: 'pieter@noort.be' },
+67 silly resolved     description: 'Check links recursively for a given url',
+67 silly resolved     bin: { 'link-checker': './bin/link-checker' },
+67 silly resolved     main: './lib/link-checker',
+67 silly resolved     repository:
+67 silly resolved      { type: 'git',
+67 silly resolved        url: 'https://pierot@github.com/proximitybbdo/link-checker.git' },
+67 silly resolved     dependencies:
+67 silly resolved      { commander: '0.5.1',
+67 silly resolved        fs: 'x',
+67 silly resolved        path: 'x',
+67 silly resolved        logme: '0.3.0',
+67 silly resolved        jsdom: '0.2.10',
+67 silly resolved        request: '2.9.3',
+67 silly resolved        url: '0.4.9' },
+67 silly resolved     license: 'MIT',
+67 silly resolved     engine: { node: '>=0.6' },
+67 silly resolved     readme: 'LinkChecker\n===========\n\n./bin/link-checker -u http://www.url-to-check.com -v\n\nChecks recursively all links on the given url webpages and returns all \'non-200\' responses.\n',
+67 silly resolved     readmeFilename: 'README.md',
+67 silly resolved     bugs: { url: 'https://github.com/proximitybbdo/link-checker/issues' },
+67 silly resolved     homepage: 'https://github.com/proximitybbdo/link-checker',
+67 silly resolved     _id: 'link-checker@0.0.2',
+67 silly resolved     _shasum: '029dd76c41ea70eb8c17f2d892f4f726e343e12a',
+67 silly resolved     _from: 'link-checker@',
+67 silly resolved     _resolved: 'https://registry.npmjs.org/link-checker/-/link-checker-0.0.2.tgz' } ]
+68 info install link-checker@0.0.2 into /Users/rskwiat/Projects/node/meadowlark
+69 info installOne link-checker@0.0.2
+70 info /Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker unbuild
+71 verbose tar unpack /Users/rskwiat/.npm/link-checker/0.0.2/package.tgz
+72 silly lockFile 046e9fb9-owlark-node-modules-link-checker tar:///Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker
+73 verbose lock tar:///Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker /Users/rskwiat/.npm/046e9fb9-owlark-node-modules-link-checker.lock
+74 silly lockFile c9f0842b-m-link-checker-0-0-2-package-tgz tar:///Users/rskwiat/.npm/link-checker/0.0.2/package.tgz
+75 verbose lock tar:///Users/rskwiat/.npm/link-checker/0.0.2/package.tgz /Users/rskwiat/.npm/c9f0842b-m-link-checker-0-0-2-package-tgz.lock
+76 silly gunzTarPerm modes [ '755', '644' ]
+77 silly gunzTarPerm extractEntry .gitignore
+78 silly gunzTarPerm extractEntry bin/
+79 silly gunzTarPerm extractEntry bin/link-checker
+80 silly gunzTarPerm extractEntry Cakefile
+81 silly gunzTarPerm extractEntry lib/
+82 silly gunzTarPerm extractEntry lib/link-checker.js
+83 silly gunzTarPerm extractEntry package.json
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm extractEntry src/
+86 silly gunzTarPerm extractEntry src/link-checker.coffee
+87 silly lockFile 046e9fb9-owlark-node-modules-link-checker tar:///Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker
+88 silly lockFile 046e9fb9-owlark-node-modules-link-checker tar:///Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker
+89 silly lockFile c9f0842b-m-link-checker-0-0-2-package-tgz tar:///Users/rskwiat/.npm/link-checker/0.0.2/package.tgz
+90 silly lockFile c9f0842b-m-link-checker-0-0-2-package-tgz tar:///Users/rskwiat/.npm/link-checker/0.0.2/package.tgz
+91 info preinstall link-checker@0.0.2
+92 verbose readDependencies using package.json deps
+93 verbose readDependencies using package.json deps
+94 verbose cache add [ 'commander@0.5.1', null ]
+95 verbose cache add name=undefined spec="commander@0.5.1" args=["commander@0.5.1",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'commander@0.5.1',
+96 verbose parsed url   path: 'commander@0.5.1',
+96 verbose parsed url   href: 'commander@0.5.1' }
+97 verbose cache add name="commander" spec="0.5.1" args=["commander","0.5.1"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '0.5.1',
+98 verbose parsed url   path: '0.5.1',
+98 verbose parsed url   href: '0.5.1' }
+99 verbose addNamed [ 'commander', '0.5.1' ]
+100 verbose addNamed [ '0.5.1', '0.5.1' ]
+101 silly lockFile 1e69ea5b-commander-0-5-1 commander@0.5.1
+102 verbose lock commander@0.5.1 /Users/rskwiat/.npm/1e69ea5b-commander-0-5-1.lock
+103 verbose cache add [ 'fs@x', null ]
+104 verbose cache add name=undefined spec="fs@x" args=["fs@x",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'fs@x',
+105 verbose parsed url   path: 'fs@x',
+105 verbose parsed url   href: 'fs@x' }
+106 verbose cache add name="fs" spec="x" args=["fs","x"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: 'x',
+107 verbose parsed url   path: 'x',
+107 verbose parsed url   href: 'x' }
+108 verbose addNamed [ 'fs', 'x' ]
+109 verbose addNamed [ null, '*' ]
+110 silly lockFile 2b42e891-fs-x fs@x
+111 verbose lock fs@x /Users/rskwiat/.npm/2b42e891-fs-x.lock
+112 verbose cache add [ 'path@x', null ]
+113 verbose cache add name=undefined spec="path@x" args=["path@x",null]
+114 verbose parsed url { protocol: null,
+114 verbose parsed url   slashes: null,
+114 verbose parsed url   auth: null,
+114 verbose parsed url   host: null,
+114 verbose parsed url   port: null,
+114 verbose parsed url   hostname: null,
+114 verbose parsed url   hash: null,
+114 verbose parsed url   search: null,
+114 verbose parsed url   query: null,
+114 verbose parsed url   pathname: 'path@x',
+114 verbose parsed url   path: 'path@x',
+114 verbose parsed url   href: 'path@x' }
+115 verbose cache add name="path" spec="x" args=["path","x"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: 'x',
+116 verbose parsed url   path: 'x',
+116 verbose parsed url   href: 'x' }
+117 verbose addNamed [ 'path', 'x' ]
+118 verbose addNamed [ null, '*' ]
+119 silly lockFile f5f07853-path-x path@x
+120 verbose lock path@x /Users/rskwiat/.npm/f5f07853-path-x.lock
+121 verbose cache add [ 'logme@0.3.0', null ]
+122 verbose cache add name=undefined spec="logme@0.3.0" args=["logme@0.3.0",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'logme@0.3.0',
+123 verbose parsed url   path: 'logme@0.3.0',
+123 verbose parsed url   href: 'logme@0.3.0' }
+124 verbose cache add name="logme" spec="0.3.0" args=["logme","0.3.0"]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: '0.3.0',
+125 verbose parsed url   path: '0.3.0',
+125 verbose parsed url   href: '0.3.0' }
+126 verbose addNamed [ 'logme', '0.3.0' ]
+127 verbose addNamed [ '0.3.0', '0.3.0' ]
+128 silly lockFile 5aef7a25-logme-0-3-0 logme@0.3.0
+129 verbose lock logme@0.3.0 /Users/rskwiat/.npm/5aef7a25-logme-0-3-0.lock
+130 verbose cache add [ 'jsdom@0.2.10', null ]
+131 verbose cache add name=undefined spec="jsdom@0.2.10" args=["jsdom@0.2.10",null]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: 'jsdom@0.2.10',
+132 verbose parsed url   path: 'jsdom@0.2.10',
+132 verbose parsed url   href: 'jsdom@0.2.10' }
+133 verbose cache add name="jsdom" spec="0.2.10" args=["jsdom","0.2.10"]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: '0.2.10',
+134 verbose parsed url   path: '0.2.10',
+134 verbose parsed url   href: '0.2.10' }
+135 verbose addNamed [ 'jsdom', '0.2.10' ]
+136 verbose addNamed [ '0.2.10', '0.2.10' ]
+137 silly lockFile ed5d6389-jsdom-0-2-10 jsdom@0.2.10
+138 verbose lock jsdom@0.2.10 /Users/rskwiat/.npm/ed5d6389-jsdom-0-2-10.lock
+139 verbose cache add [ 'request@2.9.3', null ]
+140 verbose cache add name=undefined spec="request@2.9.3" args=["request@2.9.3",null]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: 'request@2.9.3',
+141 verbose parsed url   path: 'request@2.9.3',
+141 verbose parsed url   href: 'request@2.9.3' }
+142 verbose cache add name="request" spec="2.9.3" args=["request","2.9.3"]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: '2.9.3',
+143 verbose parsed url   path: '2.9.3',
+143 verbose parsed url   href: '2.9.3' }
+144 verbose addNamed [ 'request', '2.9.3' ]
+145 verbose addNamed [ '2.9.3', '2.9.3' ]
+146 silly lockFile 806ba102-request-2-9-3 request@2.9.3
+147 verbose lock request@2.9.3 /Users/rskwiat/.npm/806ba102-request-2-9-3.lock
+148 silly addNameRange { name: 'fs', range: '*', hasData: false }
+149 silly addNameRange { name: 'path', range: '*', hasData: false }
+150 verbose cache add [ 'url@0.4.9', null ]
+151 verbose cache add name=undefined spec="url@0.4.9" args=["url@0.4.9",null]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: 'url@0.4.9',
+152 verbose parsed url   path: 'url@0.4.9',
+152 verbose parsed url   href: 'url@0.4.9' }
+153 verbose cache add name="url" spec="0.4.9" args=["url","0.4.9"]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: '0.4.9',
+154 verbose parsed url   path: '0.4.9',
+154 verbose parsed url   href: '0.4.9' }
+155 verbose addNamed [ 'url', '0.4.9' ]
+156 verbose addNamed [ '0.4.9', '0.4.9' ]
+157 silly lockFile c65f91fe-url-0-4-9 url@0.4.9
+158 verbose lock url@0.4.9 /Users/rskwiat/.npm/c65f91fe-url-0-4-9.lock
+159 verbose url raw fs
+160 verbose url resolving [ 'https://registry.npmjs.org/', './fs' ]
+161 verbose url resolved https://registry.npmjs.org/fs
+162 info trying registry request attempt 1 at 17:32:28
+163 http GET https://registry.npmjs.org/fs
+164 verbose url raw path
+165 verbose url resolving [ 'https://registry.npmjs.org/', './path' ]
+166 verbose url resolved https://registry.npmjs.org/path
+167 info trying registry request attempt 1 at 17:32:28
+168 http GET https://registry.npmjs.org/path
+169 verbose url raw logme
+170 verbose url resolving [ 'https://registry.npmjs.org/', './logme' ]
+171 verbose url resolved https://registry.npmjs.org/logme
+172 info trying registry request attempt 1 at 17:32:28
+173 http GET https://registry.npmjs.org/logme
+174 verbose url raw url
+175 verbose url resolving [ 'https://registry.npmjs.org/', './url' ]
+176 verbose url resolved https://registry.npmjs.org/url
+177 info trying registry request attempt 1 at 17:32:28
+178 http GET https://registry.npmjs.org/url
+179 verbose url raw commander
+180 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+181 verbose url resolved https://registry.npmjs.org/commander
+182 info trying registry request attempt 1 at 17:32:28
+183 verbose etag "EETKP7B1JJGAO1FBFJ2VF1G6K"
+184 http GET https://registry.npmjs.org/commander
+185 verbose url raw jsdom
+186 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom' ]
+187 verbose url resolved https://registry.npmjs.org/jsdom
+188 info trying registry request attempt 1 at 17:32:28
+189 verbose etag "1S873HWFIHVQAV41Q3ECGKJ9Z"
+190 http GET https://registry.npmjs.org/jsdom
+191 verbose url raw request
+192 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+193 verbose url resolved https://registry.npmjs.org/request
+194 info trying registry request attempt 1 at 17:32:28
+195 verbose etag "5A9O28SL1FO2WILE8SK0N1ZON"
+196 http GET https://registry.npmjs.org/request
+197 http 200 https://registry.npmjs.org/url
+198 silly registry.get cb [ 200,
+198 silly registry.get   { date: 'Tue, 13 May 2014 21:32:31 GMT',
+198 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+198 silly registry.get     etag: '"DXY3R5U2H7M385T20IVADAP8O"',
+198 silly registry.get     'content-type': 'application/json',
+198 silly registry.get     'cache-control': 'max-age=1',
+198 silly registry.get     'content-length': '8342',
+198 silly registry.get     'accept-ranges': 'bytes',
+198 silly registry.get     via: '1.1 varnish',
+198 silly registry.get     age: '76',
+198 silly registry.get     'x-served-by': 'cache-v42-ASH',
+198 silly registry.get     'x-cache': 'HIT',
+198 silly registry.get     'x-cache-hits': '1',
+198 silly registry.get     'x-timer': 'S1400016751.073596001,VS0,VE0',
+198 silly registry.get     vary: 'Accept',
+198 silly registry.get     'keep-alive': 'timeout=10, max=50',
+198 silly registry.get     connection: 'Keep-Alive' } ]
+199 silly lockFile 0b61842a-stry-npmjs-org-url-url-0-4-9-tgz https://registry.npmjs.org/url/-/url-0.4.9.tgz
+200 verbose lock https://registry.npmjs.org/url/-/url-0.4.9.tgz /Users/rskwiat/.npm/0b61842a-stry-npmjs-org-url-url-0-4-9-tgz.lock
+201 verbose addRemoteTarball [ 'https://registry.npmjs.org/url/-/url-0.4.9.tgz',
+201 verbose addRemoteTarball   'd8ae654e43779d5dcc120c282cf51717b62427ba' ]
+202 info retry fetch attempt 1 at 17:32:28
+203 verbose fetch to= /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748550-0.8545381270814687/tmp.tgz
+204 http GET https://registry.npmjs.org/url/-/url-0.4.9.tgz
+205 http 200 https://registry.npmjs.org/path
+206 silly registry.get cb [ 200,
+206 silly registry.get   { date: 'Tue, 13 May 2014 21:32:31 GMT',
+206 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+206 silly registry.get     etag: '"C6WURLSF1J7Z9WXKE6S2296H9"',
+206 silly registry.get     'content-type': 'application/json',
+206 silly registry.get     'cache-control': 'max-age=1',
+206 silly registry.get     'content-length': '1423',
+206 silly registry.get     'accept-ranges': 'bytes',
+206 silly registry.get     via: '1.1 varnish',
+206 silly registry.get     age: '81',
+206 silly registry.get     'x-served-by': 'cache-v42-ASH',
+206 silly registry.get     'x-cache': 'HIT',
+206 silly registry.get     'x-cache-hits': '1',
+206 silly registry.get     'x-timer': 'S1400016751.066208124,VS0,VE81',
+206 silly registry.get     vary: 'Accept',
+206 silly registry.get     'keep-alive': 'timeout=10, max=50',
+206 silly registry.get     connection: 'Keep-Alive' } ]
+207 silly addNameRange number 2 { name: 'path', range: '*', hasData: true }
+208 silly addNameRange versions [ 'path', [ '0.4.9' ] ]
+209 verbose addNamed [ 'path', '0.4.9' ]
+210 verbose addNamed [ '0.4.9', '0.4.9' ]
+211 silly lockFile f9561765-path-0-4-9 path@0.4.9
+212 verbose lock path@0.4.9 /Users/rskwiat/.npm/f9561765-path-0-4-9.lock
+213 silly lockFile badd1f40-ry-npmjs-org-path-path-0-4-9-tgz https://registry.npmjs.org/path/-/path-0.4.9.tgz
+214 verbose lock https://registry.npmjs.org/path/-/path-0.4.9.tgz /Users/rskwiat/.npm/badd1f40-ry-npmjs-org-path-path-0-4-9-tgz.lock
+215 verbose addRemoteTarball [ 'https://registry.npmjs.org/path/-/path-0.4.9.tgz',
+215 verbose addRemoteTarball   '380c68d01273e43f9368d7ad50fee5e3e8d477f0' ]
+216 info retry fetch attempt 1 at 17:32:28
+217 verbose fetch to= /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748617-0.14528651093132794/tmp.tgz
+218 http GET https://registry.npmjs.org/path/-/path-0.4.9.tgz
+219 http 304 https://registry.npmjs.org/commander
+220 silly registry.get cb [ 304,
+220 silly registry.get   { date: 'Tue, 13 May 2014 21:32:31 GMT',
+220 silly registry.get     server: 'Apache',
+220 silly registry.get     via: '1.1 varnish',
+220 silly registry.get     'last-modified': 'Tue, 13 May 2014 21:32:31 GMT',
+220 silly registry.get     'cache-control': 'max-age=1',
+220 silly registry.get     etag: '"EETKP7B1JJGAO1FBFJ2VF1G6K"',
+220 silly registry.get     'x-served-by': 'cache-v37-ASH',
+220 silly registry.get     'x-cache': 'HIT',
+220 silly registry.get     'x-cache-hits': '1',
+220 silly registry.get     'x-timer': 'S1400016751.071452379,VS0,VE84',
+220 silly registry.get     vary: 'Accept',
+220 silly registry.get     'content-length': '0',
+220 silly registry.get     'keep-alive': 'timeout=10, max=50',
+220 silly registry.get     connection: 'Keep-Alive' } ]
+221 verbose etag commander from cache
+222 silly lockFile b0765b5c-rg-commander-commander-0-5-1-tgz https://registry.npmjs.org/commander/-/commander-0.5.1.tgz
+223 verbose lock https://registry.npmjs.org/commander/-/commander-0.5.1.tgz /Users/rskwiat/.npm/b0765b5c-rg-commander-commander-0-5-1-tgz.lock
+224 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-0.5.1.tgz',
+224 verbose addRemoteTarball   '08477afb326d1adf9d4ee73af7170c70caa14f95' ]
+225 info retry fetch attempt 1 at 17:32:28
+226 verbose fetch to= /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748629-0.7808038715738803/tmp.tgz
+227 http GET https://registry.npmjs.org/commander/-/commander-0.5.1.tgz
+228 http 404 https://registry.npmjs.org/fs
+229 verbose headers { date: 'Tue, 13 May 2014 21:32:31 GMT',
+229 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+229 verbose headers   'content-type': 'application/json',
+229 verbose headers   'cache-control': 'max-age=0',
+229 verbose headers   'content-length': '52',
+229 verbose headers   'accept-ranges': 'bytes',
+229 verbose headers   via: '1.1 varnish',
+229 verbose headers   age: '0',
+229 verbose headers   'x-served-by': 'cache-v36-ASH',
+229 verbose headers   'x-cache': 'MISS',
+229 verbose headers   'x-cache-hits': '0',
+229 verbose headers   'x-timer': 'S1400016751.069293022,VS0,VE117',
+229 verbose headers   'keep-alive': 'timeout=10, max=50',
+229 verbose headers   connection: 'Keep-Alive' }
+230 silly registry.get cb [ 404,
+230 silly registry.get   { date: 'Tue, 13 May 2014 21:32:31 GMT',
+230 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+230 silly registry.get     'content-type': 'application/json',
+230 silly registry.get     'cache-control': 'max-age=0',
+230 silly registry.get     'content-length': '52',
+230 silly registry.get     'accept-ranges': 'bytes',
+230 silly registry.get     via: '1.1 varnish',
+230 silly registry.get     age: '0',
+230 silly registry.get     'x-served-by': 'cache-v36-ASH',
+230 silly registry.get     'x-cache': 'MISS',
+230 silly registry.get     'x-cache-hits': '0',
+230 silly registry.get     'x-timer': 'S1400016751.069293022,VS0,VE117',
+230 silly registry.get     'keep-alive': 'timeout=10, max=50',
+230 silly registry.get     connection: 'Keep-Alive' } ]
+231 silly lockFile 2b42e891-fs-x fs@x
+232 silly lockFile 2b42e891-fs-x fs@x
+233 verbose about to build /Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker
+234 info /Users/rskwiat/Projects/node/meadowlark/node_modules/link-checker unbuild
+235 info preuninstall link-checker@0.0.2
+236 http 200 https://registry.npmjs.org/request
+237 silly registry.get cb [ 200,
+237 silly registry.get   { date: 'Tue, 13 May 2014 21:32:31 GMT',
+237 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+237 silly registry.get     etag: '"779S7B23QN7PXSUDGHGF1JYA2"',
+237 silly registry.get     'content-type': 'application/json',
+237 silly registry.get     'cache-control': 'max-age=1',
+237 silly registry.get     'content-length': '83680',
+237 silly registry.get     'accept-ranges': 'bytes',
+237 silly registry.get     via: '1.1 varnish',
+237 silly registry.get     'x-served-by': 'cache-v42-ASH',
+237 silly registry.get     'x-cache': 'MISS',
+237 silly registry.get     'x-cache-hits': '0',
+237 silly registry.get     'x-timer': 'S1400016751.158456802,VS0,VE0',
+237 silly registry.get     vary: 'Accept',
+237 silly registry.get     'keep-alive': 'timeout=10, max=49',
+237 silly registry.get     connection: 'Keep-Alive' } ]
+238 info uninstall link-checker@0.0.2
+239 verbose true,/Users/rskwiat/Projects/node/meadowlark/node_modules,/Users/rskwiat/Projects/node/meadowlark/node_modules unbuild link-checker@0.0.2
+240 verbose /Users/rskwiat/Projects/node/meadowlark/node_modules/.bin,[object Object] binRoot
+241 info postuninstall link-checker@0.0.2
+242 http 200 https://registry.npmjs.org/url/-/url-0.4.9.tgz
+243 silly lockFile a5ceac76-js-org-request-request-2-9-3-tgz https://registry.npmjs.org/request/-/request-2.9.3.tgz
+244 verbose lock https://registry.npmjs.org/request/-/request-2.9.3.tgz /Users/rskwiat/.npm/a5ceac76-js-org-request-request-2-9-3-tgz.lock
+245 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.9.3.tgz',
+245 verbose addRemoteTarball   'ac0ac26169568837d2886a92b22c0bd1e15e7ad7' ]
+246 info retry fetch attempt 1 at 17:32:28
+247 verbose fetch to= /var/folders/sv/45hmv4ts11b2dbb5zhwzz8n40000gp/T/npm-47149-Ta6Dqcco/1400016748690-0.9403345808386803/tmp.tgz
+248 http GET https://registry.npmjs.org/request/-/request-2.9.3.tgz
+249 http 200 https://registry.npmjs.org/path/-/path-0.4.9.tgz
+250 error 404 404 Not Found: fs
+250 error 404
+250 error 404 'fs' is not in the npm registry.
+250 error 404 You should bug the author to publish it
+250 error 404 It was specified as a dependency of 'link-checker'
+250 error 404
+250 error 404 Note that you can also install from a
+250 error 404 tarball, folder, or http url, or git url.
+251 error System Darwin 13.1.0
+252 error command "node" "/usr/local/bin/npm" "install" "link-checker" "--save-dev"
+253 error cwd /Users/rskwiat/Projects/node/meadowlark
+254 error node -v v0.10.26
+255 error npm -v 1.4.7
+256 error code E404
+257 verbose exit [ 1, true ]
