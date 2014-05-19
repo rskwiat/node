@@ -3,7 +3,17 @@ var http = require('http');
 var fortune = require('./lib/fortune.js');
 
 var app = express();
-var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
+var handlebars = require('express3-handlebars').create({
+    defaultLayout:'main',
+    helpers:{
+        section: function(name, options){
+            if(!this._sections) this._sections = {};
+            this._sections[name] = options.fn(this);
+            return null;
+        }
+    },
+});
+
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
@@ -18,10 +28,13 @@ app.use(function(req, res, next){
     next();
 });
 
-app.use(app.router);
 
 app.get('/', function(req, res) {
     res.render('home');
+});
+
+app.get('/test', function(req, res) {
+    res.render('testpage');
 });
 
 app.get('/about', function(req, res){
